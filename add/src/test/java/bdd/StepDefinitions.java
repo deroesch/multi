@@ -8,18 +8,24 @@ import io.cucumber.java.en.Then;
 
 public class StepDefinitions {
 
-	Long long1 = 0L;
-	Long long2 = 0L;
+	Long left = 0L;
+	Long right = 0L;
 
 	@Given("addends are {long} and {long}")
-	public void addends_are_and(Long long1, Long long2) {
-		this.long1 = long1;
-		this.long2 = long2;
+	public void addends_are_and(Long left, Long right) {
+		this.left = left;
+		this.right = right;
 	}
 
 	@Then("the result is {long}")
-	public void the_result_is(Long long3) {
-		Long sum = new Add().add(long1, long2);
-		assertEquals(sum, long3);
+	public void the_result_is(Long actual) {
+		Long sum = new Add().add(left, right);
+		assertEquals(actual, sum);
+	}
+
+	@Then("the result is not {long}")
+	public void the_result_is_not(Long actual) {
+		Long sum = new Add().add(left, right);
+		assertNotEquals(actual, sum);
 	}
 }
