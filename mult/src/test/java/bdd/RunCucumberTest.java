@@ -5,7 +5,7 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = { "pretty" }, features = "src/test/resources/bdd/features")
+@CucumberOptions(plugin = { "pretty" }, features = "src/test/resources/bdd/features", monochrome = true)
 public class RunCucumberTest {
 
 }
