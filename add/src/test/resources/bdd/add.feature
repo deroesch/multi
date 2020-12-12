@@ -1,4 +1,4 @@
-Feature: Balances Utilities
+Feature: Math Utilities
   Does addition work?
 		
   Scenario: Simple addition
