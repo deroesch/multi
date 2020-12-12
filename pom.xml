@@ -10,7 +10,9 @@
 
 	<name>Root Module</name>
 	<description>Simple demo of a multi-module Maven project in Java, with
-		both JUnit and Cucumber tests.</description>
+		both JUnit and Cucumber tests.
+	</description>
+	<url>https://github.com/deroesch/multi.git</url>
 
 	<modules>
 		<module>add</module>
