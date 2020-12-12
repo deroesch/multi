@@ -1,3 +1,4 @@
+@AllTests
 Feature: Math Utilities
   Does multiplication work?
 		
