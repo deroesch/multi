@@ -12,6 +12,10 @@
 	<artifactId>crossModule</artifactId>
 	<name>Service CrossModule</name>
 
+	<properties>
+		<skipITs>false</skipITs>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.deroesch</groupId>
@@ -45,4 +49,27 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<version>${failsafe.version}</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>integration-test</goal>
+							<goal>verify</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<includes>
+						<include>**/*IT.java</include>
+					</includes>
+					<skipTests>${skipITs}</skipTests>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>

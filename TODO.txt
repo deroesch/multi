@@ -1,2 +1,1 @@
 - Parameterized BDD test
-- Move integration tests to verify phase
