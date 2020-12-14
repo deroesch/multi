@@ -13,4 +13,10 @@
 
 	<name>Service Mult</name>
 	<description>A module that performs multiplication</description>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+	</dependencies>
 </project>

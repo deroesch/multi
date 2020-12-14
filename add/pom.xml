@@ -13,4 +13,10 @@
 
 	<name>Service Add</name>
 	<description>A module that performs addition</description>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+	</dependencies>
 </project>

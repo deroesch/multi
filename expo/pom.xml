@@ -14,4 +14,10 @@
 	<name>Service Expo</name>
 	<description>A module that performs exponentiation</description>
 
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+	</dependencies>
 </project>
